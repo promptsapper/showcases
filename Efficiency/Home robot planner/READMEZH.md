@@ -1,30 +1,30 @@
-# Robot Action Planner
+# 机器人动作计划器
 
-Welcome to the Robot Action Planner project! This project provides a framework to help you plan action scripts for robots to execute tasks. Whether it's controlling a household robot or a laboratory robot, you can generate actionable scripts by adhering to strict rules and limitations based on user intent.
+欢迎来到机器人动作计划器项目！这个项目提供了一个框架，帮助你规划机器人执行任务的动作脚本。无论是控制家务机器人还是实验室机器人，通过遵循严格的规则和限制，就可以根据用户意图生成可操作的脚本。
 
-## Features
+## 功能特点
 
-- **Role Definitions:** robot controller, allowing for the creation of action scripts.
-- **Fundamental Elements:** Encompasses objects, actions, states, and rooms, clarifying the scope of operable elements for the robot.
-- **Context Control:** Imposes strict regulations on the use of actions, objects, states, and rooms, ensuring a rational plan.
-- **Practical Examples:** Offers real-world scenarios to demonstrate how to convert user intent into action sequences.
+- **角色定义：** 机器人控制者制定动作脚本。
+- **基本要素：** 包括对象、动作、状态和房间等，明确了机器人可操作的范围。
+- **上下文控制：** 严格规定了动作、对象、状态和房间的使用限制，确保合理的计划。
+- **实用示例：** 提供实际例子，展示如何根据用户意图生成动作脚本的过程和结果。
 
-## Usage Guide
-Copy and paste prompt from [Home robot planner.txt](#) into ChatGPT (GPT4 is recommended). <br>
-It will follow the process defined in the prompt
+## 使用指南
+将 [Home robot planner.txt](#) 里的 prompt复制粘贴到ChatGPT中（建议用GPT4)就可以了。<br>
+它会按照prompt里定义的流程执行
 ```plaintext
-1. Read the above introduction to understand the project's background and functionality.
-2. Adhere to the context control rules and limitations, and devise action scripts based on user intent.
-3. Review the thinking process behind correctly generating action scripts in the provided examples.
-4. Adapt user intent and objects from the examples to create your custom action scripts for your tasks.
-5. Employ the generated action scripts to control robots for task execution.
+1. 阅读上述介绍，了解项目的背景和功能。
+2. 遵循上下文控制规则和限制，根据用户意图思考并生成动作脚本。
+3. 在示例中查看正确生成动作脚本的思考过程。
+4. 针对你的任务，替换示例中的用户意图和对象，生成自己的动作脚本。
+5. 将生成的动作脚本用于控制机器人执行任务。
 ```
-Just input what you want the robot to do, and it will output the script that the robot needs to execute
-## Examples
+和它对话只要输入你要让机器人做的事，他就会输出机器人需要执行的脚本
+## 示例
 
-Below are two examples showcasing the application of context control and rules to generate action scripts:
+以下是两个示例，展示了如何应用上下文控制和规则生成的动作脚本：
 
-**Example 1:** User intent "watch movie"
+**示例 1：** 用户意图 "watch movie"
 
 ```plaintext
 Think aloud:
@@ -40,7 +40,7 @@ switchon (tv)
 declaredone
 ```
 
-**Example 2:** User intent "throw away lime"
+**示例 2：** 用户意图 "throw away lime"
 ```plaintext
 User intent: throw away lime
 Think aloud:
@@ -74,7 +74,6 @@ putin (lime, garbagecan)
 close (garbagecan)
 declaredone
 ```
+## 告知问题
 
-## Troubleshooting
-
-If you're unable to generate valid scripts due to missing objects, actions, rooms, etc., carefully review the context control rules and limitations, ensuring alignment with the provided thinking process.
+如果由于缺少对象、动作、房间等而无法生成有效的脚本，请仔细检查上下文控制规则和限制，并确保遵循示例中的思考过程，自行添加对象。
