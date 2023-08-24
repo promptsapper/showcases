@@ -2,6 +2,9 @@
 
 Welcome to the Robot Action Planner project! This project provides a framework to help you plan action scripts for robots to execute tasks. Whether it's controlling a household robot or a laboratory robot, you can generate actionable scripts by adhering to strict rules and limitations based on user intent.
 
+## Prompt
+See file [Home robot planner.txt](#)
+
 ## Features
 
 - **Role Definitions:** robot controller, allowing for the creation of action scripts.
